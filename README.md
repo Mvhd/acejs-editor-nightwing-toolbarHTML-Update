@@ -1,7 +1,7 @@
 # acejs-editor-nightwing-toolbarHTML-Update
 ACE JS Editor nightwing example on toolbar.html updated
 
-<style>
+    <style>
     
     .ace_editor, .toolbar {
         border: 0px solid lightgray;
@@ -19,28 +19,35 @@ ACE JS Editor nightwing example on toolbar.html updated
         margin-top: 0px;
     }
 
-}
+    }
 
     
-</style>
-<select id="theme_selector" class="col-xs-offset-1" style="max-width:160px">
+    </style>
+
+    <select id="theme_selector" class="col-xs-offset-1" style="max-width:160px">
+            
             <option value="" selected>Select editor's theme</option>
             <option value="chrome">Chrome</option>
             <option value="crimson_editor">Crimson</option>
-            <option value="ambiance">Ambiance</option>
+            <option value="ambiance">Ambiance</option>            
             <option value="github">Github</option>
             <option value="textmate">Textmate</option>
-            <option value="dreamweaver">Dreamweaver</option>
-            <option value="eclipse">Eclipse</option>
-            <option value="twilight">Twilight</option>
+            <option value="dreamweaver">Dreamweaver</option>           
+            <option value="eclipse">Eclipse</option>            
+            <option value="twilight">Twilight</option>         
             <option value="vibrant_ink">Vibrant ink</option>
             <option value="tomorrow_night_eighties">Tomorrow night 80s</option>
+        
         </select><br>
+        
         <label class="col-xs-offset-1" for="amount">Design Price:</label>
+        
         <input class="col-xs-offset-1" style="max-width:160px" type="text" id="amt" placeholder="Amount"/><br>
+        
         <label class="col-xs-offset-1" for="version">Version Design:</label>
+        
         <input class="col-xs-offset-1" style="max-width:160px" type="text" id="version" placeholder="Version"/><br>
-
+        
     <div class="radio-option">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Design:<br>
         <input type="radio" id="c_v" class="radioType" name="type" value="CV" />
@@ -62,29 +69,27 @@ ACE JS Editor nightwing example on toolbar.html updated
         
         <input id="coder_id" type="hidden" value="<?php if(isset($this->session->userdata['is_logged_in'])){ $coderID = $this->session->userdata['is_logged_in']['reg_id']; echo $coderID; } ?>"/>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-modelist.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-error_marker.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-language_tools.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-options.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/mode-javascript.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/worker-javascript.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-chrome.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-crimson_editor.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-ambiance.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-github.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-textmate.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-dreamweaver.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-eclipse.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-twilight.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-vibrant_ink.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/mode-php.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/html2canvas.min.js"></script>
-<script> 
-$(document).ready(function(){
-        $('.x').click(function(){
-            $('.alert').remove();
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-modelist.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-error_marker.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-language_tools.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ext-options.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/mode-javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/worker-javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-chrome.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-crimson_editor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-ambiance.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-github.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-textmate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-dreamweaver.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-eclipse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-twilight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/theme-vibrant_ink.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/mode-php.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/html2canvas.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
         //for displaying output on clicking save in the editor
          var editorValue = editor.getValue();
          document.getElementById('preview1').innerHTML= ""+editorValue; 
