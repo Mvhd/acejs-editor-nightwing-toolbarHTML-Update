@@ -1,6 +1,7 @@
 # acejs-editor-nightwing-toolbarHTML-Update
 ACE JS Editor nightwing example on toolbar.html updated 
-should be embeded inside the HTML tags with Body tag. Edit to suite your use
+should be embeded inside the HTML tags with Body tag. Edit to suite your use.
+ACE Editor with View Window pluse Send button, div Screen capture using HTML2Canvas and many more
 
     <style>
     
@@ -51,11 +52,11 @@ should be embeded inside the HTML tags with Body tag. Edit to suite your use
         
     <div class="radio-option">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose Design:<br>
-        <input type="radio" id="c_v" class="radioType" name="type" value="CV" />
+        <input type="radio" id="c_v" class="radioType" name="type" value="radio1" />
         <label for="c_v">CV</label>
-        <input type="radio" id="c_l" class="radioType" name="type" value="CL" />
+        <input type="radio" id="c_l" class="radioType" name="type" value="radio2" />
         <label for="c_l">Cover Letter</label>
-        <input type="radio" id="p_l" class="radioType" name="type" value="PL" />
+        <input type="radio" id="p_l" class="radioType" name="type" value="radio3" />
         <label for="p_l">Proposal Letter</label>       
     </div>
         <p id="msg" style="margin-left: 30px; color: red"></p>
