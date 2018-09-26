@@ -6,20 +6,31 @@ ACE Editor with View Window pluse Send button, div Screen capture using HTML2Can
     <style>
     
     .ace_editor, .toolbar {
-        border: 0px solid lightgray;
-        margin: 0 auto;     
-        width: 90%;      
+        border: 1px solid lightgray;
+        margin-left: 30px;     
+        width: 50%;
+    } 
+    .ace_editor {
+        height: auto;
     }
-     #previewContainer{
-        width: 90%;
-        padding: 10px;
-        margin: 15px;
+    
+    #editor{
+        margin-bottom: 30px;
+        /*"margin:2px; max-width:60px;padding:5px;max-height:25px;"*/
+      /*  style: "margin:2px; max-width:60px;padding:5px;max-height:25px;", */
+    }
+    .toolbar{
+        margin-top: 40px;
+    }
+    #previewContainer{
+        border: 10px solid #eee;
+        width: 30%;
+        padding: 20px;
+        margin-right: 10px;
+        margin-top: 10px;
         height: 450px;
         overflow: scroll;
-    }
-        .toolbar{
-        margin-top: 0px;
-    }
+        float: right;
 
     }
 
