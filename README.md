@@ -1,5 +1,6 @@
 # acejs-editor-nightwing-toolbarHTML-Update
-ACE JS Editor nightwing example on toolbar.html updated
+ACE JS Editor nightwing example on toolbar.html updated 
+should be embeded inside the HTML tags with Body tag. Edit to suite your use
 
     <style>
     
@@ -90,7 +91,7 @@ ACE JS Editor nightwing example on toolbar.html updated
 
     <script>
         $(document).ready(function(){
-        //for displaying output on clicking save in the editor
+        //Mvhd addition for displaying output on clicking save in the editor
          var editorValue = editor.getValue();
          document.getElementById('preview1').innerHTML= ""+editorValue; 
     });
@@ -112,14 +113,14 @@ ACE JS Editor nightwing example on toolbar.html updated
     $('#theme_selector').on('change',function(){
              var theme = $('#theme_selector').val(); 
     
-    editor.setTheme("ace/theme/"+theme); //chrome,crimson_editor,tomorrow_night_eighties,ambiance,github,textmate
+    editor.setTheme("ace/theme/"+theme); // Mvhd addition to choose editor's theme chrome,crimson_editor,tomorrow_night_eighties,ambiance,github,textmate
     });
     var refs = {};
     function updateToolbar() {
         refs.saveButton.disabled = editor.session.getUndoManager().isClean();
         refs.undoButton.disabled = !editor.session.getUndoManager().hasUndo();
         refs.redoButton.disabled = !editor.session.getUndoManager().hasRedo();
-        refs.sendButton.disabled = editor.session.getUndoManager().isClean();
+        refs.sendButton.disabled = editor.session.getUndoManager().isClean(); //Mvhd addition
     }
     editor.on("input", updateToolbar);
     editor.session.setValue(localStorage.savedValue || "Welcome to ace Toolbar demo!")
@@ -136,7 +137,7 @@ ACE JS Editor nightwing example on toolbar.html updated
         bindKey: { win: "ctrl-s", mac: "cmd-s" }
     });
     
-    //1. CVB addition starts
+    //1. Mvhd addition starts
 
     function post() {
      
@@ -215,7 +216,7 @@ ACE JS Editor nightwing example on toolbar.html updated
         exec: post,
        bindKey: { win: "ctrl-s", mac: "cmd-s" }
     });
-    //1. CVB addition ends
+    //1. Mvhd addition ends
     
     buildDom(["div", { class: "toolbar" },
               //2. CVB addition start
@@ -224,7 +225,7 @@ ACE JS Editor nightwing example on toolbar.html updated
             style: "margin:2px; max-width:60px;padding:5px;max-height:25px; background:green",
             onclick: post
         }, "send"],
-              //2.CVB addition end
+              //2.Mvhd addition end
         ["button", {
             ref: "saveButton",
             style: "margin:2px; max-width:60px;padding:5px;max-height:25px;",
